@@ -14,6 +14,8 @@
 		ABF07D9A2CD843C80077254B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF07D992CD843C80077254B /* Assets.xcassets */; };
 		ABF07D9D2CD843C80077254B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ABF07D9C2CD843C80077254B /* Base */; };
 		ABF07DA62CD852F00077254B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07DA52CD852F00077254B /* Common.swift */; };
+		ABF07DA92CD87B840077254B /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07DA82CD87B840077254B /* SummaryCollectionViewCell.swift */; };
+		ABF07DAB2CD87B9A0077254B /* ForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07DAA2CD87B9A0077254B /* ForecastCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		ABF07D9C2CD843C80077254B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF07D9E2CD843C80077254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABF07DA52CD852F00077254B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		ABF07DA82CD87B840077254B /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABF07DAA2CD87B9A0077254B /* ForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABF07DAC2CD898530077254B /* CurrentWearherApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CurrentWearherApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ABF07DAD2CD8A82A0077254B /* ForecaseApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ForecaseApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		ABF07D8F2CD843C70077254B /* ShinyDay */ = {
 			isa = PBXGroup;
 			children = (
+				ABF07DA72CD87B6B0077254B /* Cell */,
 				ABF07DA42CD852E10077254B /* Service */,
 				ABF07D902CD843C70077254B /* AppDelegate.swift */,
 				ABF07D922CD843C70077254B /* SceneDelegate.swift */,
@@ -74,8 +81,19 @@
 			isa = PBXGroup;
 			children = (
 				ABF07DA52CD852F00077254B /* Common.swift */,
+				ABF07DAC2CD898530077254B /* CurrentWearherApi.playground */,
+				ABF07DAD2CD8A82A0077254B /* ForecaseApi.playground */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		ABF07DA72CD87B6B0077254B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ABF07DA82CD87B840077254B /* SummaryCollectionViewCell.swift */,
+				ABF07DAA2CD87B9A0077254B /* ForecastCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF07DA62CD852F00077254B /* Common.swift in Sources */,
+				ABF07DA92CD87B840077254B /* SummaryCollectionViewCell.swift in Sources */,
+				ABF07DAB2CD87B9A0077254B /* ForecastCollectionViewCell.swift in Sources */,
 				ABF07D952CD843C70077254B /* ViewController.swift in Sources */,
 				ABF07D912CD843C70077254B /* AppDelegate.swift in Sources */,
 				ABF07D932CD843C70077254B /* SceneDelegate.swift in Sources */,
