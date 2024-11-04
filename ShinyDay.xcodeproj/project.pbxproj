@@ -13,6 +13,7 @@
 		ABF07D982CD843C70077254B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ABF07D972CD843C70077254B /* Base */; };
 		ABF07D9A2CD843C80077254B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF07D992CD843C80077254B /* Assets.xcassets */; };
 		ABF07D9D2CD843C80077254B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ABF07D9C2CD843C80077254B /* Base */; };
+		ABF07DA62CD852F00077254B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07DA52CD852F00077254B /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ABF07D992CD843C80077254B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF07D9C2CD843C80077254B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF07D9E2CD843C80077254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF07DA52CD852F00077254B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		ABF07D8F2CD843C70077254B /* ShinyDay */ = {
 			isa = PBXGroup;
 			children = (
+				ABF07DA42CD852E10077254B /* Service */,
 				ABF07D902CD843C70077254B /* AppDelegate.swift */,
 				ABF07D922CD843C70077254B /* SceneDelegate.swift */,
 				ABF07D942CD843C70077254B /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				ABF07D9E2CD843C80077254B /* Info.plist */,
 			);
 			path = ShinyDay;
+			sourceTree = "<group>";
+		};
+		ABF07DA42CD852E10077254B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ABF07DA52CD852F00077254B /* Common.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF07DA62CD852F00077254B /* Common.swift in Sources */,
 				ABF07D952CD843C70077254B /* ViewController.swift in Sources */,
 				ABF07D912CD843C70077254B /* AppDelegate.swift in Sources */,
 				ABF07D932CD843C70077254B /* SceneDelegate.swift in Sources */,
@@ -300,7 +312,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +320,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeonyul.ShinyDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +344,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +352,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeonyul.ShinyDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
