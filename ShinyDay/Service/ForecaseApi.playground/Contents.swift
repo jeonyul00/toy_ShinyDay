@@ -35,13 +35,11 @@ func fetchCurrentWeather(_ lat: Double, _ lon: Double){
     
     let task = URLSession.shared.dataTask(with: url) { data, response, error in
         if let error { fatalError() }
-        
         if let response = response as? HTTPURLResponse {
             if response.statusCode == 200 {
                 guard let data else { fatalError() }
                 let decoder = JSONDecoder()
                 let weather = try? decoder.decode(ForecaseApi.self, from: data)
-                print(weather)
             }
         }
     }
