@@ -34,6 +34,7 @@
 		AB881FA62CD9D3F800180856 /* AirPollution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPollution.swift; sourceTree = "<group>"; };
 		AB881FA82CD9D4D700180856 /* DetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfo.swift; sourceTree = "<group>"; };
 		AB881FAA2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB881FAC2CD9FC5800180856 /* HelloResultType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloResultType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ABF07D8D2CD843C70077254B /* ShinyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF07D902CD843C70077254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF07D922CD843C70077254B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 				ABF07DAC2CD898530077254B /* CurrentWearherApi.playground */,
 				ABF07DAD2CD8A82A0077254B /* ForecaseApi.playground */,
 				ABF07DB32CD8AB7E0077254B /* WeatherApi.swift */,
+				AB881FAC2CD9FC5800180856 /* HelloResultType.playground */,
 			);
 			path = Service;
 			sourceTree = "<group>";
