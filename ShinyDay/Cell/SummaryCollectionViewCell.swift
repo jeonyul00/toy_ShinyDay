@@ -14,7 +14,9 @@ class SummaryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var minMaxLabel: UILabel!
     @IBOutlet weak var currentTemperaturelLabel: UILabel!
     
-    
-    
-    
+    override func awakeFromNib() {
+        statusLabel.textColor = .white
+        minMaxLabel.textColor = .white
+        currentTemperaturelLabel.textColor = .white
+    }
 }

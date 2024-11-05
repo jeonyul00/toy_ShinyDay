@@ -16,6 +16,11 @@ class ForecastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var temperatureLabel: UILabel!
     
     
-    
+    override func awakeFromNib() {
+        dateLabel.textColor = .white
+        timeLabel.textColor = .white
+        statusLabel.textColor = .white
+        temperatureLabel.textColor = .white
+    }
     
 }
