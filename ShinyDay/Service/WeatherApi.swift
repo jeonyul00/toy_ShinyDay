@@ -11,10 +11,12 @@ class WeatherApi {
     enum Path:String {
         case weather
         case forecast
+        case air_pollution
     }
     var summary: CurrentWeather?
     var forecastList = [ForecastData]()
     let dispathGroup = DispatchGroup() // 여러 작업을 하나로 묶는 역할
+    var detailList = [DetailInfo]()
     
     private func fetch<T:Codable>(path:Path, lat: Double, lon: Double, completion: @escaping (Result<T,Error>)->Void){
         guard var url = URL(string: "https://api.openweathermap.org/data/2.5/\(path.rawValue)") else {
@@ -93,6 +95,17 @@ class WeatherApi {
             }
             self.dispathGroup.leave()
         }
+        dispathGroup.enter()
+        fetch(path: .air_pollution, lat: lat, lon: lon) {  (result:Result<AirPollution, Error>) in
+            switch result {
+            case .success(let data):
+                self.detailList.append(contentsOf: data.infoList)
+            case .failure(_):
+                self.detailList = []
+            }
+            self.dispathGroup.leave()
+        }
+        
         dispathGroup.notify(queue: .main) {
             completion()
         }

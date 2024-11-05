@@ -10,6 +10,9 @@
 		AB881FA02CD99B5100180856 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881F9F2CD99B5100180856 /* ApiError.swift */; };
 		AB881FA32CD9A13900180856 /* Double+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA22CD9A13900180856 /* Double+Formatter.swift */; };
 		AB881FA52CD9A9E100180856 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA42CD9A9E100180856 /* Date+Formatter.swift */; };
+		AB881FA72CD9D3F800180856 /* AirPollution.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA62CD9D3F800180856 /* AirPollution.swift */; };
+		AB881FA92CD9D4D700180856 /* DetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA82CD9D4D700180856 /* DetailInfo.swift */; };
+		AB881FAB2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FAA2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift */; };
 		ABF07D912CD843C70077254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D902CD843C70077254B /* AppDelegate.swift */; };
 		ABF07D932CD843C70077254B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D922CD843C70077254B /* SceneDelegate.swift */; };
 		ABF07D952CD843C70077254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D942CD843C70077254B /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 		AB881F9F2CD99B5100180856 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		AB881FA22CD9A13900180856 /* Double+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Formatter.swift"; sourceTree = "<group>"; };
 		AB881FA42CD9A9E100180856 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		AB881FA62CD9D3F800180856 /* AirPollution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPollution.swift; sourceTree = "<group>"; };
+		AB881FA82CD9D4D700180856 /* DetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfo.swift; sourceTree = "<group>"; };
+		AB881FAA2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABF07D8D2CD843C70077254B /* ShinyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF07D902CD843C70077254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF07D922CD843C70077254B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			children = (
 				ABF07DA82CD87B840077254B /* SummaryCollectionViewCell.swift */,
 				ABF07DAA2CD87B9A0077254B /* ForecastCollectionViewCell.swift */,
+				AB881FAA2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -126,6 +133,8 @@
 				ABF07DAF2CD8AAA60077254B /* CurrentWeather.swift */,
 				ABF07DB12CD8AAFA0077254B /* Forecast.swift */,
 				AB881F9F2CD99B5100180856 /* ApiError.swift */,
+				AB881FA62CD9D3F800180856 /* AirPollution.swift */,
+				AB881FA82CD9D4D700180856 /* DetailInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB881FAB2CD9D8BB00180856 /* DetailInfoCollectionViewCell.swift in Sources */,
+				AB881FA92CD9D4D700180856 /* DetailInfo.swift in Sources */,
 				ABF07DA62CD852F00077254B /* Common.swift in Sources */,
 				ABF07DB22CD8AAFA0077254B /* Forecast.swift in Sources */,
 				ABF07DA92CD87B840077254B /* SummaryCollectionViewCell.swift in Sources */,
@@ -208,6 +219,7 @@
 				AB881FA52CD9A9E100180856 /* Date+Formatter.swift in Sources */,
 				AB881FA02CD99B5100180856 /* ApiError.swift in Sources */,
 				ABF07DAB2CD87B9A0077254B /* ForecastCollectionViewCell.swift in Sources */,
+				AB881FA72CD9D3F800180856 /* AirPollution.swift in Sources */,
 				ABF07DB02CD8AAA60077254B /* CurrentWeather.swift in Sources */,
 				ABF07D952CD843C70077254B /* ViewController.swift in Sources */,
 				ABF07D912CD843C70077254B /* AppDelegate.swift in Sources */,
