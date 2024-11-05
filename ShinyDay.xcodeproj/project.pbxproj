@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB881FA02CD99B5100180856 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881F9F2CD99B5100180856 /* ApiError.swift */; };
+		AB881FA32CD9A13900180856 /* Double+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA22CD9A13900180856 /* Double+Formatter.swift */; };
+		AB881FA52CD9A9E100180856 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB881FA42CD9A9E100180856 /* Date+Formatter.swift */; };
 		ABF07D912CD843C70077254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D902CD843C70077254B /* AppDelegate.swift */; };
 		ABF07D932CD843C70077254B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D922CD843C70077254B /* SceneDelegate.swift */; };
 		ABF07D952CD843C70077254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF07D942CD843C70077254B /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		AB881F9F2CD99B5100180856 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		AB881FA22CD9A13900180856 /* Double+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Formatter.swift"; sourceTree = "<group>"; };
+		AB881FA42CD9A9E100180856 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		ABF07D8D2CD843C70077254B /* ShinyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF07D902CD843C70077254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF07D922CD843C70077254B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB881FA12CD9A12500180856 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				AB881FA22CD9A13900180856 /* Double+Formatter.swift */,
+				AB881FA42CD9A9E100180856 /* Date+Formatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
 		ABF07D842CD843C70077254B = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		ABF07D8F2CD843C70077254B /* ShinyDay */ = {
 			isa = PBXGroup;
 			children = (
+				AB881FA12CD9A12500180856 /* Formatter */,
 				ABF07DAE2CD8AA960077254B /* Model */,
 				ABF07DA72CD87B6B0077254B /* Cell */,
 				ABF07DA42CD852E10077254B /* Service */,
@@ -190,6 +204,8 @@
 				ABF07DA62CD852F00077254B /* Common.swift in Sources */,
 				ABF07DB22CD8AAFA0077254B /* Forecast.swift in Sources */,
 				ABF07DA92CD87B840077254B /* SummaryCollectionViewCell.swift in Sources */,
+				AB881FA32CD9A13900180856 /* Double+Formatter.swift in Sources */,
+				AB881FA52CD9A9E100180856 /* Date+Formatter.swift in Sources */,
 				AB881FA02CD99B5100180856 /* ApiError.swift in Sources */,
 				ABF07DAB2CD87B9A0077254B /* ForecastCollectionViewCell.swift in Sources */,
 				ABF07DB02CD8AAA60077254B /* CurrentWeather.swift in Sources */,

@@ -13,7 +13,7 @@ class WeatherApi {
         case forecast
     }
     var summary: CurrentWeather?
-    var forecast: Forecast?
+    var forecastList = [ForecastData]()
     let dispathGroup = DispatchGroup() // 여러 작업을 하나로 묶는 역할
     
     private func fetch<T:Codable>(path:Path, lat: Double, lon: Double, completion: @escaping (Result<T,Error>)->Void){
@@ -72,7 +72,7 @@ class WeatherApi {
             switch result {
             case .success(let data):
                 self.summary = data
-            case .failure(let failure):
+            case .failure(_):
                 self.summary = nil
             }
             self.dispathGroup.leave()
@@ -81,9 +81,15 @@ class WeatherApi {
         fetch(path: .forecast, lat: lat, lon: lon) { (result:Result<Forecast, Error>) in
             switch result {
             case .success(let data):
-                self.forecast = data
-            case .failure(let failure):
-                self.forecast = nil
+                self.forecastList = data.list.map {
+                    let dt = Date(timeIntervalSince1970: TimeInterval($0.dt))
+                    let icon = $0.weather.first?.icon ?? ""
+                    let weather = $0.weather.first?.description ?? "알 수 없음"
+                    let temperature = $0.main.temp
+                    return ForecastData(date: dt, icon: icon, weather: weather, temperature: temperature)
+                }
+            case .failure(_):
+                self.forecastList = []
             }
             self.dispathGroup.leave()
         }
